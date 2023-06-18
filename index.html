@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" >
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <section class="prim">
+                <img src="./assets/huge.png" class="imgmain">
+                <h1>¿QUE HAVANNA SE TE ANTOJA HOY?</h1>
+                <span class="sub">Aprovecha tu cupon de regalo</span>
+                <ul>
+                    <li class="boton" id="btnComprarSem">SEMILLA x9uds $1500</li>
+                    <li class="boton" id="btnComprarDdl">SUPER DULCE DE LECHE x9uds $2000 </li>
+                    <li class="boton" id="btnComprarChoc">CHOCOLATE NEGRO x12uds $2200</li>
+                    <li class="boton" id="btnComprarVeg">VEGANO 70% CACAO x9uds $2300</li>
+                    <li class="boton" id="btnComprarMix">MIXTOS x12uds $2350</li>
+                  </ul>
+            </section>
+            <section class="ventana">
+                <h3>Carrito</h3>
+                <ul id="carrito">
+                  <!-- Acá vamos a cargar los items que vayamos comprando -->
+                </ul>
+                <h3 id="cupon">Cupon Disponible: <span></span></h3>
+                <button class="btn-comprar" onclick="simularCompra()">COMPRAR</button>
+              </section>
+        </div>
+        
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
