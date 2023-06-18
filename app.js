@@ -90,15 +90,21 @@ function actualizarHTML() {
   
   // ...
 
-// Función para simular la compra
+// ...
+
+// ...
+
+// Función para simular la compra y vaciar carrito
 function simularCompra() {
-    if (carrito.length > 0) {
-      alert("¡Compra realizada!");
-  
-      carrito.shift();
-  
-      // Actualizo el HTML
-      actualizarHTML();
+  if (carrito.length > 0) {
+    alert("¡Compra realizada!");
+
+    while (carrito.length > 0) {
+      carrito.pop(); // Eliminar el último elemento del carrito
     }
+
+    // Actualizar el HTML
+    actualizarHTML();
   }
-  
+}
+
